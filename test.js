@@ -31,3 +31,24 @@ function bubbleSort(arr) {
 }
 
 console.log(bubbleSort([3,7,4,1,5,2]))
+
+function selectionSort(arr) {
+	let min, temp, position;
+	for(let i=0;i<arr.length-1;i++) {
+  	min = arr[i];
+    for(let j=i+1;j<arr.length;j++) {
+    	if(arr[j]<min) {
+      	min = arr[j];
+        position = j;
+      }
+    }
+    if(min != arr[i]) {
+    	temp = arr[i];
+      arr[i] = min;
+      arr[position] = temp;
+    }
+    console.log('in loop',i,arr);
+  }
+  return arr;
+}
+console.log(selectionSort([10,9,2,5,12,3,7,6,1]))

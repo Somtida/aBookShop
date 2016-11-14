@@ -14,3 +14,20 @@ function insertionSort(arr) {
   return arr;
 }
 console.log(insertionSort([7,2,4,1,5,3]))
+
+function bubbleSort(arr) {
+	let tmp;
+	for(let i=0;i<arr.length;i++) {
+  	for(let j=0;j<arr.length-1;j++) {
+    	if(arr[j]>arr[j+1]) {
+      	tmp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = tmp;
+      }
+    }
+    console.log("arr inloop",i,arr);
+  }
+  return arr;
+}
+
+console.log(bubbleSort([3,7,4,1,5,2]))

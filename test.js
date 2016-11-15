@@ -52,3 +52,7 @@ function selectionSort(arr) {
   return arr;
 }
 console.log(selectionSort([10,9,2,5,12,3,7,6,1]))
+
+function quickSort(arr) {
+
+}
